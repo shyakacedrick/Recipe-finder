@@ -45,11 +45,10 @@ const App = () => {
 
         {/* Detail View */}
         <div className="detail-pane">
-          {selectedRecipe ? (
-            <RecipeDetail recipe={selectedRecipe} />
-          ) : (
-            <p>Search and select a recipe to see details!</p>
-          )}
+          {selectedRecipe 
+            ? ( <RecipeDetail recipe={selectedRecipe} /> ) 
+            : ( <p>Search and select a recipe to see details!</p> )
+          }
         </div>
       </div>
     </div>
