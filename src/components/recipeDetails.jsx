@@ -13,7 +13,7 @@ const RecipeDetail = ({ recipe }) => {
   return (
     <div className="recipe-detail">
       <h2>{recipe.strMeal}</h2>
-      <img className="recipe-image" src={recipe.strMealThumb} alt={recipe.strMeal} style={{ width: '300px', borderRadius: '10px' }} />
+      <img className="recipe-image" src={recipe.strMealThumb} alt={recipe.strMeal}  />
       <h3>Ingredients</h3>
       <ul>
         {ingredients.map((item, index) => <li key={index}>{item}</li>)}
